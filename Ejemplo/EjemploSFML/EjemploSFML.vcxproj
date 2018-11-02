@@ -138,9 +138,6 @@ COPY "$(SolutionDir)SFML-2.5.1\bin\sfml-system-2.dll" "$(TargetDir)"</Command>
   <ItemGroup>
     <ClCompile Include="Ejemplo.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Player.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

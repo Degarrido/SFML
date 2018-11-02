@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#define LIMITEABAJO 600
+#define LIMITEARRIBA 1
 
 int main()
 {
@@ -10,6 +12,7 @@ int main()
 	player.setFillColor(sf::Color::Blue);
 	player.setSize(sf::Vector2f(30.f, 150.f));
 	player2.setSize(sf::Vector2f(30.f, 150.f));
+	player2.setFillColor(sf::Color::Red);
 	player2.setPosition(770, 550);
 	ball.setPosition(250, 250);
 
@@ -37,6 +40,7 @@ int main()
 		{
 			player2.move(0.f, 0.2);
 		}
+		
 		window.clear();
 		window.draw(player);
 		window.draw(player2);
