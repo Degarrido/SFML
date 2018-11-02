@@ -15,7 +15,7 @@ int main()
 	player2.setFillColor(sf::Color::Red);
 	player2.setPosition(770, 550);
 	ball.setPosition(250, 250);
-
+	
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -40,7 +40,6 @@ int main()
 		{
 			player2.move(0.f, 0.2);
 		}
-		
 		window.clear();
 		window.draw(player);
 		window.draw(player2);
